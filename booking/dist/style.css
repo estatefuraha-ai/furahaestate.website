@@ -1,0 +1,31 @@
+.button-group{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+
+.button-group button{
+    flex:1;
+    padding:15px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    color:white;
+}
+
+button[value="email"]{
+    background:#007BFF;
+}
+
+button[value="email"]:hover{
+    background:#0056b3;
+}
+
+button[value="whatsapp"]{
+    background:#25D366;
+}
+
+button[value="whatsapp"]:hover{
+    background:#1da851;
+}

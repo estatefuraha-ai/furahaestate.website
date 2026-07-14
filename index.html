@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Furaha Estate | Luxury Airbnb & Real Estate</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins', sans-serif;
+    }
+
+    body{
+      background:#36454F;
+      color:#fff;
+      overflow-x:hidden;
+    }
+
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
+
+    /* =========================
+       HEADER
+    ========================== */
+
+    header{
+      width:100%;
+      position:fixed;
+      top:0;
+      left:0;
+      z-index:1000;
+      background:#FFFFF4;
+      border-bottom:1px solid rgba(255, 196, 0, 0.2);
+    }
+
+    .navbar{
+      width:90%;
+      margin:auto;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:18px 0;
+    }
+
+    .logo{
+      display:flex;
+      align-items:center;
+      gap:14px;
+    }
+
+    .logo-circle{
+      width:48px;
+      height:48px;
+      background:#d4a62a;
+      border-radius:50%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      font-size:22px;
+      font-weight:700;
+      color:#000;
+    }
+
+    .logo-text h2{
+      font-size:23px;
+      color:#CC7722;
+      line-height:1;
+    }
+
+    .logo-text span{
+      font-size:11px;
+      letter-spacing:4.5px;
+      color:#36454F;
+    }
+
+    nav ul{
+      display:flex;
+      gap:35px;
+      list-style:none;
+    }
+
+    nav ul li a{
+      font-size:15px;
+      font-weight:500;
+      transition:0.3s;
+      color:#CC7722;
+    }
+
+    nav ul li a:hover{
+      color:#36454F;
+    }
+    
+    /* =========================
+       HERO SECTION
+    ========================== */
+
+    .hero{
+      width:100%;
+      min-height:100vh;
+      background: linear-gradient(to right, rgba(0,0,0,0.95), rgba(0,0,0,0.4)),
+      url(https://i.postimg.cc/yxJS5ssf/Transform-the-reference-architectural-exterior-pho-1779183440873.png);
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      padding-top:90px;
+    }
+
+    .hero-content{
+      width:90%;
+      margin:auto;
+      max-width:1200px;
+    }
+
+    .small-heading{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      color:#f2c94c;
+      letter-spacing:4px;
+      font-size:12px;
+      margin-bottom:20px;
+      text-transform:uppercase;
+    }
+
+    .small-heading::before{
+      content:"";
+      width:60px;
+      height:2px;
+      background:#f2c94c;
+    }
+
+    .hero-content h1{
+      font-size:90px;
+      line-height:1.02;
+      font-weight:800;
+      margin-bottom:30px;
+      max-width:800px;
+    }
+
+    .gold{
+      color:#f2c94c;
+    }
+
+    .hero-content p{
+      max-width:650px;
+      font-size:20px;
+      color:#e5e5e5;
+      line-height:1.8;
+      margin-bottom:40px;
+    }
+
+    .hero-buttons{
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:16px 30px;
+      border-radius:10px;
+      font-size:16px;
+      font-weight:600;
+      transition:0.3s;
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    .btn-primary{
+      background:#f2c94c;
+      color:#000;
+    }
+
+    .btn-primary:hover{
+      transform:translateY(-3px);
+    }
+
+    .btn-outline{
+      border:1px solid #f2c94c;
+      color:#f2c94c;
+    }
+
+    .btn-outline:hover{
+      background:#f2c94c;
+      color:#000;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================== */
+
+    @media(max-width:992px){
+
+      .hero-content h1{
+        font-size:65px;
+      }
+
+      nav{
+        display:none;
+      }
+
+    }
+
+    @media(max-width:768px){
+
+      .hero{
+        padding:120px 0 80px;
+      }
+
+      .hero-content h1{
+        font-size:48px;
+      }
+
+      .hero-content p{
+        font-size:17px;
+      }
+
+      .logo-text h2{
+        font-size:22px;
+      }
+
+    }
+
+    @media(max-width:500px){
+
+      .hero-content h1{
+        font-size:38px;
+      }
+
+      .hero-buttons{
+        flex-direction:column;
+      }
+
+      .btn{
+        width:100%;
+        justify-content:center;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header>
+    <div id="navbar">
+
+      <div class="logo">
+        <img src="https://i.postimg.cc/gJ5q1bCh/Chat-GPT-Image-Jul-6-2026-07-31-05-PM.png" alt="Furaha Estate Logo" class="real-logo">
+
+        <div class="logo-text">
+          <h2>Furaha Estate Airbnb</h2>
+          <span>COMFORT | CLASS | LUXURY</span>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li>
+            <a href="#"></i>Home</a>
+</li>
+          <li><a href="#Apartments">Apartments</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#Gallery">Gallery</a></li>
+          <li><a href="#Contacts">Contact</a></li>
+        </ul>
+      </nav>
+  
+  <!-- Navbar Item -->
+  
+<div class="location">
+    <i class="fa-solid fa-location-dot"></i>
+    <span>Tanga, Tanzania</span>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</div>
+  
+  </header>
+
+  <!-- =========================
+       HERO SECTION
+  ========================== -->
+
+  <section class="hero">
+
+    <div class="slider">
+
+        <div class="slide active" style="background-image:url('https://i.postimg.cc/yxJS5ssf/Transform-the-reference-architectural-exterior-pho-1779183440873.png');"></div>
+
+        <div class="slide" style="background-image:url('https://i.postimg.cc/V6ZCDdQZ/w-QYPTWSK.jpg');"></div>
+
+        <div class="slide" style="background-image:url('https://i.postimg.cc/jST9QG2K/Chat-GPT-Image-Jul-10-2026-06-29-08-AM.png');"></div>
+
+        <div class="slide" style="background-image:url('https://i.postimg.cc/BQYwWXQy/Chat-GPT-Image-Jul-10-2026-12-57-57-AM.png');"></div>
+
+    </div>
+
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <div class="reveal">
+       <p>
+        
+         
+      </p>
+
+      <div class="small-heading">
+        <span>Luxury Airbnb & Premium Real Estate</span></div>
+      </div>
+  <div class="reveal">
+  
+        <h1>Discover Elegant
+        Living with
+        <span class="gold">Furaha Estate</span></h1>
+
+      <p>
+     Premium Airbnb apartments and modern real estate services in Tanga, Tanzania. Designed for comfort, elegance, and unforgettable stays.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#Apartments" class="btn btn-primary">
+          <i class="fa-solid fa-building"></i>
+          Explore Apartments
+        </a>
+
+       <a href="https://wa.me/255719054077?text=Hello,%20I%20would%20like%20to%20book."
+target="_blank"
+class="btn btn-outline">
+          <i class="fa-brands fa-whatsapp"></i>
+          WhatsApp Booking
+        </a>
+
+      </div>
+<p>
+       
+  
+  
+  
+      </p>
+    </div>
+
+  </section>
+  <script src="js/app.js"></script>
+
+</body>
+  <p>
+       
+  
+  
+      </p>
+</html><!-- =========================
+     ABOUT SECTION
+========================== -->
+
+<section class="about">
+  <div class="reveal-left">
+  <p>
+       
+  
+  
+      </p>
+
+  <div class="about-container">
+
+    <!-- LEFT CONTENT -->
+    <div class="about-content">
+      
+    <div class="section-tag">
+        
+        
+      </div>
+ <h1>
+        ABOUT FURAHA ESTATE
+      </h1>
+      
+      <h2>
+        Premium Airbnb &
+        Modern Real Estate
+        Living in Tanga, Tanzania
+      </h2>
+
+      <p>
+        Furaha Estate offers luxury Airbnb apartments and professional
+        real estate solutions designed for comfort, elegance, and peace
+        of mind. Every property is carefully selected to deliver a premium
+        living experience for guests, travelers, families, and investors.
+      </p>
+
+      <p>
+     We combine hospitality, luxury interiors, and quality customer service to create unforgettable experiences in every property.
+      </p>
+
+      <!-- STATS -->
+      <div class="about-stats">
+
+        <div class="stat-box">
+          <h3>30+</h3>
+          <span>Happy Guests </span>
+        </div>
+        <div class="stat-box">
+          <h3>24/7</h3>
+          <span>Customer Support</span>
+        </div>
+
+      </div>
+  <p>
+       
+    
+      </p>
+
+    </div>
+
+    <!-- RIGHT IMAGE -->
+            <div class="reveal-right">
+    <div class="about-image">
+
+      <img src="https://i.postimg.cc/rFB5B0df/921cb8df239b97286370e1f6f8180693.jpg" alt="Luxury Airbnb Apartment">
+
+    </div>
+
+  </div>
+
+  
+</section><!-- =========================
+     FEATURED PROPERTIES SECTION
+========================== -->
+
+<section class id="Apartments">
+
+  <section class="properties">
+    <div class="reveal">
+    <div class="reveal-fade">
+    
+  <div class="properties-container">
+
+    <!-- TOP CONTENT -->
+    <div class="properties-top">
+
+      <div class="top-left">
+        
+
+        <div class="section-tag">
+        </div>
+<h1>
+           FEATURED APARTMENTS
+        </h1>
+        
+        <h2>
+          Elegant Airbnb Apartments
+        </h2>
+
+      </div>
+
+      <div class="top-right">
+
+        <p>
+         Discover premium furnished apartments designed with comfort, sophistication, and modern living in mind.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- PROPERTY CARDS -->
+    <div class="property-grid">
+      <!-- CARD 1 -->
+      <div class="property-card">
+    
+
+        <div class="property-image">
+
+          <img src="https://i.postimg.cc/j537ZL05/Mbd-WOSV3.jpg" alt="Luxury Apartment">
+
+          <div class="price-tag">
+            TZS 70,000 | $27 per night
+          </div>
+
+        </div>
+
+        <div class="property-content">
+
+          <div class="property-title-row">
+
+            <h3>Royal Comfort One Bedroom Suite</h3>
+
+            <span>
+              <i class="fa-solid fa-bed"></i>
+              1 Bedrooms
+            </span>
+
+          </div>
+
+          <p>
+            Elegant fully furnished apartment featuring luxury
+            interiors, fast WiFi, air conditioning, and premium comfort.
+          </p>
+
+          <div class="property-buttons">
+
+            <a href="booking/dist/booking.html.html" target="_self"
+class="property-btn primary-btn">
+              <i class="fa-regular fa-calendar"></i>
+              Book Now
+            </a>
+
+           </a>
+          
+<a href="gallery1/dist/gallery1.html.html" target="_self" class="property-btn outline-btn">
+              <i class="fa-regular fa-eye"></i>
+              View
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="property-card">
+
+        <div class="property-image">
+
+          <img src="https://i.postimg.cc/pXwKwh9G/79a549f02d3d4fdf31b6afdf234b279b-4x.jpg" alt="Family Apartment">
+
+          <div class="price-tag">
+           TZS 150,000 | $57 per night
+          </div>
+
+        </div>
+
+        <div class="property-content">
+
+          <div class="property-title-row">
+
+            <h3>Beautifully designed Premium Family Suite</h3>
+
+            <span>
+              <i class="fa-solid fa-bed"></i>
+              2 Bedrooms
+            </span>
+
+          </div>
+
+          <p>
+            Spacious luxury apartment designed for families,
+            business travelers, and unforgettable premium stays.
+          </p>
+
+          <div class="property-buttons">
+
+            <a href="booking2/dist/booking2.html.html" target="_self" class="property-btn primary-btn">
+              <i class="fa-regular fa-calendar"></i>
+              Book Now
+            </a>
+
+            <a href="gallery2/dist/gallery2.html.html" target="_self" class="property-btn outline-btn">
+              <i class="fa-regular fa-eye"></i>
+              View
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+                     
+
+</section><section class="testimonials-section">
+  <div class="reveal-fade">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="subtitle">CLIENT EXPERIENCES & REVIEWS</span>
+            <h2>What Guests Say About Furaha Estate</h2>
+        </div>
+
+        <div class="testimonial-grid">
+
+            <!-- Card 1 -->
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    Picha zinafanana kabisa na hali halisi. Sebule ni pana, vyumba ni vizuri na mazingira ni salama. Tulijisikia kama tuko nyumbani. Asante Furaha Estate kwa huduma nzuri”
+                </p>
+
+                <h4>Mr John .L. Michael, Mwanza</h4>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    “Tulikaa kwa siku tatu na kila kitu kilikuwa bora. Vitanda ni vizuri, jikoni lina vifaa vya kutosha na mazingira ni tulivu. Hii ni sehemu ambayo ningependekeza kwa familia au wanandoa. Tutakaa hapa tena tukirudi Tanga”
+                </p>
+
+                <h4>Aniceti Butati, Dar</h4>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    “One of the finest boutique stays we’ve experienced in East Africa.
+                    Calm, secure, and beautifully curated.”
+                </p>
+
+                <h4>Pastor Philip Banda, UK</h4>
+            </div>
+
+        </div>
+    </div>
+  
+</section><section class="amenities-section">
+<div class="reveal">
+  <div class="reveal-zoom">
+    <div class="container">
+      
+<section class id="Services">
+        <!-- Heading -->
+        <div class="amenities-heading">
+            <span class="section-tag">
+ </span>
+            <h1>
+                AMENITIES & SERVICE   </h1>
+            <h2>
+                Comfort Meet Luxury   </h2>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="amenities-grid">
+
+            <!-- Item -->
+            <div class="amenity-card">
+                <div class="icon-box">
+                    ❄
+                </div>
+                <h3>Air Conditioning</h3>
+            </div>
+
+            <!-- Item -->
+            <div class="amenity-card">
+                <div class="icon-box">
+                    🛋
+                </div>
+                <h3>Luxury Furniture</h3>
+            </div>
+
+            <!-- Item -->
+            <div class="amenity-card">
+                <div class="icon-box">
+                    📺
+                </div>
+                <h3>TV</h3>
+            </div>
+
+            <!-- Item -->
+            <div class="amenity-card">
+                <div class="icon-box">
+                    🍽
+                </div>
+                <h3>Modern Kitchen</h3>
+            </div>
+
+            <!-- Item -->
+            <div class="amenity-card">
+                <div class="icon-box">
+                    🚿
+                </div>
+                <h3>Rainfall Shower</h3>
+            </div>
+
+            <!-- Item -->
+            <div class="amenity-card">
+                <div class="icon-box">
+                    📶
+                </div>
+                <h3>Fast Wi-Fi</h3>
+            </div>
+
+            <!-- Item -->
+            <div class="amenity-card">
+                <div class="icon-box">
+                    🛡
+                </div>
+                <h3>Secure Environment</h3>
+            </div>
+
+            <!-- Item -->
+            <div class="amenity-card">
+                <div class="icon-box">
+                    🚘
+                </div>
+                <h3>Parking Space</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+  
+</section><section class="gallery-section">
+      <div class="reveal">
+  
+    <div class="container">
+      
+<section class id="Gallery">
+        <!-- Section Heading -->
+        <div class="gallery-heading">
+            <span class="section-tag">
+            </span>
+          <h1>
+        APARTMENT GALLEY  </h1>
+
+            <h2>
+                Beautiful Interior<br>
+                & Exterior Spaces
+            </h2>
+        </div>
+
+        <!-- Masonry Grid -->
+        <div class="gallery-grid">
+
+            <!-- Large Image -->
+            <div class="gallery-item very small">
+                <img src="https://i.postimg.cc/yxJS5ssf/Transform-the-reference-architectural-exterior-pho-1779183440873.png" alt="Luxury Bedroom">
+            </div>
+
+            <!-- Top Middle -->
+            <div class="gallery-item">
+                <img src="https://i.postimg.cc/TP9m5ttn/2B7wc-Yw3.png" alt="Modern Villa Exterior">
+            </div>
+
+            <!-- Top Right -->
+            <div class="gallery-item">
+                <img src="https://i.postimg.cc/MTpB7146/generated-image-(6).png" alt="Luxury Kitchen">
+            </div>
+
+            <!-- Bellow right -->
+            <div class="gallery-item">
+                <img src="https://i.postimg.cc/BQr2rL8H/31c7327598dca1f8fd6aba63c2ee27b0-4x.jpg" alt="Modern Living Room">
+            </div>
+
+            <!-- Bellow middle -->
+            <div class="gallery-item">
+                <img src="https://i.postimg.cc/vZ55bY90/29889227726d2e3de46994e8773150b3-4x.jpg" alt="Elegant Lounge Space">
+            </div>
+          
+          <!-- Bellow Left -->
+            <div class="gallery-item">
+                <img src="https://i.postimg.cc/BQYwWXQy/Chat-GPT-Image-Jul-10-2026-12-57-57-AM.png" alt="Elegant Lounge Space">
+              
+        </div>
+
+    </div>
+
+  </div>
+      
+</section><section class="booking-section">
+              <div class="reveal">
+
+    <div class="container">
+
+<section class id="Contacts">
+ 
+        <!-- Heading -->
+        <div class="booking-content">
+
+            <span class="section-tag"> 
+            </span>
+<h1>
+        CONTACT US </h1>
+            <h2>
+                Book Your Luxury Stay<br>
+                Today
+            </h2>
+
+            <p>
+                Ready for comfort, elegance, and premium accommodation? Contact Furaha Estate today.
+            </p>
+
+        </div>
+
+        <!-- Contact Cards -->
+        <div class="contact-grid">
+
+            <!-- Card -->
+            <div class="contact-card">
+                <div class="contact-icon">
+                    💬
+                </div>
+
+                <h3>WhatsApp</h3>
+
+                <span>+255 719 054 077</span>
+           
+            </div>
+
+            <!-- Card -->
+            <div class="contact-card">
+                <div class="contact-icon">
+                    📞
+                </div>
+
+                <h3>Phone Call</h3>
+
+                <span>+255 787 636 565</span>
+            </div>
+
+            <!-- Card -->
+            <div class="contact-card">
+                <div class="contact-icon">
+                    ✉
+                </div>
+
+                <h3>Email</h3>
+
+                <span>furaha58@yahoo.com</span>
+            </div>
+
+         </div>
+
+        <!-- CTA Buttons -->
+        <div class="booking-buttons">
+
+             <a href="https://wa.me/255719054077?text=Hello,%20I%20would%20like%20to%20book."
+target="_blank" class="primary-btn">
+                <i class="fa-brands fa-whatsapp"></i>
+                Contact on WhatsApp
+            </a>
+
+            <a href="contact/dist/contact.html.html" target="_blank" class="secondary-btn">
+               <i class="fa fa-paper-plane"></i>
+                Send Email
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Footer -->
+
+<footer class="footer">
+
+    <div class="container footer-wrapper">
+
+        <p>
+            © 2026 Furaha Estate. All rights reserved.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="https://www.instagram.com/furaha_estate/"
+   target="_blank">Instagram</a>
+           <a href="https://www.facebook.com/profile.php?id=61589990951804" target="_blank">Facebook</a>
+            <a href="https://wa.me/255719054077?text=Hello,%20I%20would%20like%20to%20book."
+target="_blank">WhatsApp</a>
+
+        </div>
+
+    </div>
+
+</footer>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
